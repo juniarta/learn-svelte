@@ -1,0 +1,37 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "hello world svelte",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "autobuild": "rollup -c -w",
+    "dev": "run-p start:dev autobuild",
+    "start": "sirv public",
+    "start:dev": "sirv public --dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juniarta/learn-svelte.git"
+  },
+  "keywords": [
+    "svelte"
+  ],
+  "author": "Willymarj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juniarta/learn-svelte/issues"
+  },
+  "homepage": "https://github.com/juniarta/learn-svelte#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.12.1",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-node-resolve": "^5.0.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^4.0.4",
+    "sirv-cli": "^0.4.2",
+    "svelte": "^3.4.1"
+  }
+}
